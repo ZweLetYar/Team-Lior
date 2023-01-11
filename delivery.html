@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grey House Restaurant</title>
+    <link rel="shortcut icon" href="foodphotos/bg8.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&family=Sofia+Sans+Condensed:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      #carouselExampleSlidesOnly img {
+        height: 664px;
+      }
+      .photo {
+        width: 50%;
+      }
+      .photo img {
+        height: 600px;
+        width: 100%;
+      }
+
+      .deli-container {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .deli-container .form img {
+        width: 70px;
+        position: absolute;
+        top: 16px;
+        left: 354px;
+      }
+      .form .input-field input {
+        width: 100%;
+
+        padding: 12px 10px;
+        font-size: 16px;
+        font-family: Oswald, sans-serif;
+        display: block;
+        border: none;
+        border-bottom: 1px solid #747474;
+        outline: none;
+      }
+      .form .input-field input:focus {
+        border-color: #a41313;
+      }
+      .form input::placeholder {
+        text-transform: uppercase;
+      }
+      .form form {
+        margin-left: 169px;
+      }
+      .form .action input {
+        padding: 8px 76px;
+        margin-top: 35px;
+        /* margin-right: 22px; */
+        /* width: 50%; */
+
+        border: none;
+        outline: none;
+        font-family: Oswald, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.2px;
+        cursor: pointer;
+        background-color: #7a85a7;
+        color: rgb(231, 227, 227);
+        border-radius: 4px;
+
+        transition: all 0.4s;
+      }
+      .form .action input:hover {
+        background-color: #d8d8d8;
+        color: #3c4d6d;
+      }
+      .form .action input:nth-child(2) {
+        color: #d8d8d8;
+        padding: 8px 94px;
+        margin-left: 20px;
+      }
+      .form .action input:nth-child(2):hover {
+        color: #3c4d6d;
+      }
+
+      .G {
+        font-size: 3em;
+        color: #741616;
+      }
+      .form h1 {
+        font-family: lobster, serif;
+      }
+      .form h2,
+      h4,
+      p {
+        font-family: Oswald, sans-serif;
+      }
+      .photo {
+        margin-top: 44px;
+      }
+      .w1 {
+        color: #be1600;
+        font-size: 30px;
+      }
+      .w2 {
+        color: #3c4d6d;
+        font-size: 20px;
+      }
+      .w3 {
+        color: #be1600;
+        font-size: 25px;
+      }
+      .w4 {
+        color: crimson;
+        font-size: 20px;
+      }
+      .w5 {
+        color: #be1600;
+        font-size: 27px;
+      }
+      .w6 {
+        color: brown;
+        font-size: 28px;
+      }
+      .w7 {
+        color: darkslategray;
+        font-size: 30px;
+      }
+      .photo img:nth-child(2) {
+        width: 116px;
+        height: 150px;
+        position: absolute;
+        right: 196px;
+        top: 276px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="foodphotos/juice/deli.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="foodphotos/juice/deli2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="foodphotos/juice/deli3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="foodphotos/juice/deli4.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"> Grey House Restaurant </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="About.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="menu.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="breakfast.html">Breakfast</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="maindishes.html"
+                    >Main Dishes</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="juices.html">Juices</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Delivery</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="deli-container">
+        <div class="form">
+          <form action="" method="post">
+            <img src="foodphotos/bg8.png" alt="" width="100px" />
+            <h1><span class="G">G</span>rey House</h1>
+            <br /><br />
+            <h2>
+              <span class="w1">H</span>
+              <span class="w2">U</span>
+              <span class="w3">N</span>
+              <span class="w4">G</span>
+              <span class="w5">R</span>
+              <span class="w6">Y</span>
+              <span class="w7">?</span>
+            </h2>
+            <h4>Food Ordering</h4>
+            <p>After filling the ordering form, we will contact you.</p>
+            <div class="input-field">
+              <input type="text" placeholder="YOUR NAME" autocomplete="off" />
+            </div>
+
+            <div class="input-field">
+              <input type="text" placeholder="Ph-No." autocomplete="off" />
+            </div>
+            <div class="input-field">
+              <input
+                type="text"
+                placeholder="Fill your address (completely)"
+                autocomplete="off"
+              />
+            </div>
+            <div class="action">
+              <input type="submit" value="cancle" />
+              <input type="submit" value="ok" />
+            </div>
+          </form>
+        </div>
+        <div class="photo">
+          <img src="foodphotos/juice/deli5.jpg" alt="" />
+          <img src="foodphotos/juice/discount.webp" alt="" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
